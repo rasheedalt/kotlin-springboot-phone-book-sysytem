@@ -5,7 +5,11 @@ RUN git clone https://github.com/rasheedalt/kotlin-springboot-phone-book-sysytem
 
 RUN cd kotlin-springboot-phone-book-sysytem
 
+RUN docker build -t  phonebooksystem .
+
 RUN docker run -p 8080:8080 phonebooksystem
+
+App will be available at http://localhost:8080
 
 
 API ENDPOINTS
